@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F383971B15A043DB00029939 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F383971A15A043DB00029939 /* UIKit.framework */; };
+		F383971D15A043DB00029939 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F383971C15A043DB00029939 /* Foundation.framework */; };
+		F383971F15A043DB00029939 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F383971E15A043DB00029939 /* CoreGraphics.framework */; };
+		F383972115A043DB00029939 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F383972015A043DB00029939 /* CoreData.framework */; };
+		F383973715A0442400029939 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F383973615A0442400029939 /* AVFoundation.framework */; };
+		F383973915A0442D00029939 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F383973815A0442D00029939 /* QuartzCore.framework */; };
+		F383973B15A0443500029939 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F383973A15A0443500029939 /* OpenGLES.framework */; };
+		F383973D15A0444100029939 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F383973C15A0444100029939 /* CoreVideo.framework */; };
+		F383973F15A0444900029939 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F383973E15A0444900029939 /* CoreMedia.framework */; };
+		F383974415A0463200029939 /* CannyConvertEdgeToColorFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F383974115A0463200029939 /* CannyConvertEdgeToColorFilter.m */; };
+		F383974515A0463200029939 /* CannyEdgeTrackingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F383974315A0463200029939 /* CannyEdgeTrackingFilter.m */; };
+		F383974E15A0464200029939 /* mobsolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F383974715A0464200029939 /* mobsolViewController.m */; };
+		F383974F15A0464200029939 /* MyCannyEdgeDetectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F383974915A0464200029939 /* MyCannyEdgeDetectionFilter.m */; };
+		F383975015A0464200029939 /* MyCannyNonMaxSuppressionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F383974B15A0464200029939 /* MyCannyNonMaxSuppressionFilter.m */; };
+		F383975115A0464200029939 /* MySobelEdgeDetectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F383974D15A0464200029939 /* MySobelEdgeDetectionFilter.m */; };
+		F383975615A0475A00029939 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F383975515A0475A00029939 /* libGPUImage.a */; };
+		F383975D15A04AC200029939 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F383975A15A04AC200029939 /* main.m */; };
+		F383975E15A04AC200029939 /* mobsolAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F383975C15A04AC200029939 /* mobsolAppDelegate.m */; };
+		F383976415A04AD100029939 /* ios_video_canny.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F383976115A04AD100029939 /* ios_video_canny.xcdatamodeld */; };
+		F383976A15A04B0C00029939 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F383976615A04B0C00029939 /* InfoPlist.strings */; };
+		F383977E15A08FAF00029939 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F383977D15A08FAF00029939 /* MainStoryboard.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F383971615A043DB00029939 /* Lieven-Canny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lieven-Canny.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F383971A15A043DB00029939 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F383971C15A043DB00029939 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F383971E15A043DB00029939 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F383972015A043DB00029939 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F383973615A0442400029939 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F383973815A0442D00029939 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F383973A15A0443500029939 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F383973C15A0444100029939 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F383973E15A0444900029939 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F383974015A0463200029939 /* CannyConvertEdgeToColorFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CannyConvertEdgeToColorFilter.h; sourceTree = "<group>"; };
+		F383974115A0463200029939 /* CannyConvertEdgeToColorFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CannyConvertEdgeToColorFilter.m; sourceTree = "<group>"; };
+		F383974215A0463200029939 /* CannyEdgeTrackingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CannyEdgeTrackingFilter.h; sourceTree = "<group>"; };
+		F383974315A0463200029939 /* CannyEdgeTrackingFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CannyEdgeTrackingFilter.m; sourceTree = "<group>"; };
+		F383974615A0464200029939 /* mobsolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mobsolViewController.h; sourceTree = "<group>"; };
+		F383974715A0464200029939 /* mobsolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mobsolViewController.m; sourceTree = "<group>"; };
+		F383974815A0464200029939 /* MyCannyEdgeDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCannyEdgeDetectionFilter.h; sourceTree = "<group>"; };
+		F383974915A0464200029939 /* MyCannyEdgeDetectionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCannyEdgeDetectionFilter.m; sourceTree = "<group>"; };
+		F383974A15A0464200029939 /* MyCannyNonMaxSuppressionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCannyNonMaxSuppressionFilter.h; sourceTree = "<group>"; };
+		F383974B15A0464200029939 /* MyCannyNonMaxSuppressionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCannyNonMaxSuppressionFilter.m; sourceTree = "<group>"; };
+		F383974C15A0464200029939 /* MySobelEdgeDetectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySobelEdgeDetectionFilter.h; sourceTree = "<group>"; };
+		F383974D15A0464200029939 /* MySobelEdgeDetectionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySobelEdgeDetectionFilter.m; sourceTree = "<group>"; };
+		F383975515A0475A00029939 /* libGPUImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGPUImage.a; path = "../../GPUImage/build/Debug-iphoneos/libGPUImage.a"; sourceTree = "<group>"; };
+		F383975A15A04AC200029939 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F383975B15A04AC200029939 /* mobsolAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mobsolAppDelegate.h; sourceTree = "<group>"; };
+		F383975C15A04AC200029939 /* mobsolAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mobsolAppDelegate.m; sourceTree = "<group>"; };
+		F383975F15A04AD100029939 /* ios_video_canny-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ios_video_canny-Info.plist"; sourceTree = "<group>"; };
+		F383976015A04AD100029939 /* ios_video_canny-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ios_video_canny-Prefix.pch"; sourceTree = "<group>"; };
+		F383976215A04AD100029939 /* ios_video_canny.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios_video_canny.xcdatamodel; sourceTree = "<group>"; };
+		F383976715A04B0C00029939 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		F383977D15A08FAF00029939 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F383971315A043DB00029939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F383975615A0475A00029939 /* libGPUImage.a in Frameworks */,
+				F383973F15A0444900029939 /* CoreMedia.framework in Frameworks */,
+				F383973D15A0444100029939 /* CoreVideo.framework in Frameworks */,
+				F383973B15A0443500029939 /* OpenGLES.framework in Frameworks */,
+				F383973915A0442D00029939 /* QuartzCore.framework in Frameworks */,
+				F383973715A0442400029939 /* AVFoundation.framework in Frameworks */,
+				F383971B15A043DB00029939 /* UIKit.framework in Frameworks */,
+				F383971D15A043DB00029939 /* Foundation.framework in Frameworks */,
+				F383971F15A043DB00029939 /* CoreGraphics.framework in Frameworks */,
+				F383972115A043DB00029939 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F383970B15A043DB00029939 = {
+			isa = PBXGroup;
+			children = (
+				F383977D15A08FAF00029939 /* MainStoryboard.storyboard */,
+				F383976515A04B0C00029939 /* en.lproj */,
+				F383975F15A04AD100029939 /* ios_video_canny-Info.plist */,
+				F383976015A04AD100029939 /* ios_video_canny-Prefix.pch */,
+				F383976115A04AD100029939 /* ios_video_canny.xcdatamodeld */,
+				F383975A15A04AC200029939 /* main.m */,
+				F383975B15A04AC200029939 /* mobsolAppDelegate.h */,
+				F383975C15A04AC200029939 /* mobsolAppDelegate.m */,
+				F383975515A0475A00029939 /* libGPUImage.a */,
+				F383974615A0464200029939 /* mobsolViewController.h */,
+				F383974715A0464200029939 /* mobsolViewController.m */,
+				F383974815A0464200029939 /* MyCannyEdgeDetectionFilter.h */,
+				F383974915A0464200029939 /* MyCannyEdgeDetectionFilter.m */,
+				F383974A15A0464200029939 /* MyCannyNonMaxSuppressionFilter.h */,
+				F383974B15A0464200029939 /* MyCannyNonMaxSuppressionFilter.m */,
+				F383974C15A0464200029939 /* MySobelEdgeDetectionFilter.h */,
+				F383974D15A0464200029939 /* MySobelEdgeDetectionFilter.m */,
+				F383974015A0463200029939 /* CannyConvertEdgeToColorFilter.h */,
+				F383974115A0463200029939 /* CannyConvertEdgeToColorFilter.m */,
+				F383974215A0463200029939 /* CannyEdgeTrackingFilter.h */,
+				F383974315A0463200029939 /* CannyEdgeTrackingFilter.m */,
+				F383973E15A0444900029939 /* CoreMedia.framework */,
+				F383973C15A0444100029939 /* CoreVideo.framework */,
+				F383973A15A0443500029939 /* OpenGLES.framework */,
+				F383973815A0442D00029939 /* QuartzCore.framework */,
+				F383973615A0442400029939 /* AVFoundation.framework */,
+				F383971915A043DB00029939 /* Frameworks */,
+				F383971715A043DB00029939 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F383971715A043DB00029939 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F383971615A043DB00029939 /* Lieven-Canny.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F383971915A043DB00029939 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F383971A15A043DB00029939 /* UIKit.framework */,
+				F383971C15A043DB00029939 /* Foundation.framework */,
+				F383971E15A043DB00029939 /* CoreGraphics.framework */,
+				F383972015A043DB00029939 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F383976515A04B0C00029939 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				F383976615A04B0C00029939 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F383971515A043DB00029939 /* ios_video_canny */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F383973315A043DB00029939 /* Build configuration list for PBXNativeTarget "ios_video_canny" */;
+			buildPhases = (
+				F383971215A043DB00029939 /* Sources */,
+				F383971315A043DB00029939 /* Frameworks */,
+				F383971415A043DB00029939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ios_video_canny;
+			productName = ios_video_canny;
+			productReference = F383971615A043DB00029939 /* Lieven-Canny.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F383970D15A043DB00029939 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = mobsol;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = F383971015A043DB00029939 /* Build configuration list for PBXProject "ios_video_canny" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F383970B15A043DB00029939;
+			productRefGroup = F383971715A043DB00029939 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F383971515A043DB00029939 /* ios_video_canny */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F383971415A043DB00029939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F383976A15A04B0C00029939 /* InfoPlist.strings in Resources */,
+				F383977E15A08FAF00029939 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F383971215A043DB00029939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F383974415A0463200029939 /* CannyConvertEdgeToColorFilter.m in Sources */,
+				F383974515A0463200029939 /* CannyEdgeTrackingFilter.m in Sources */,
+				F383974E15A0464200029939 /* mobsolViewController.m in Sources */,
+				F383974F15A0464200029939 /* MyCannyEdgeDetectionFilter.m in Sources */,
+				F383975015A0464200029939 /* MyCannyNonMaxSuppressionFilter.m in Sources */,
+				F383975115A0464200029939 /* MySobelEdgeDetectionFilter.m in Sources */,
+				F383975D15A04AC200029939 /* main.m in Sources */,
+				F383975E15A04AC200029939 /* mobsolAppDelegate.m in Sources */,
+				F383976415A04AD100029939 /* ios_video_canny.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F383976615A04B0C00029939 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F383976715A04B0C00029939 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F383973115A043DB00029939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F383973215A043DB00029939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F383973415A043DB00029939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios_video_canny-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../../GPUImage/framework/**";
+				INFOPLIST_FILE = "ios_video_canny-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../GPUImage/build/Debug-iphoneos\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "Lieven-Canny";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F383973515A043DB00029939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios_video_canny-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../../GPUImage/framework/**";
+				INFOPLIST_FILE = "ios_video_canny-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../GPUImage/build/Debug-iphoneos\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "Lieven-Canny";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F383971015A043DB00029939 /* Build configuration list for PBXProject "ios_video_canny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F383973115A043DB00029939 /* Debug */,
+				F383973215A043DB00029939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F383973315A043DB00029939 /* Build configuration list for PBXNativeTarget "ios_video_canny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F383973415A043DB00029939 /* Debug */,
+				F383973515A043DB00029939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F383976115A04AD100029939 /* ios_video_canny.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F383976215A04AD100029939 /* ios_video_canny.xcdatamodel */,
+			);
+			currentVersion = F383976215A04AD100029939 /* ios_video_canny.xcdatamodel */;
+			path = ios_video_canny.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F383970D15A043DB00029939 /* Project object */;
+}
