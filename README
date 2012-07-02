@@ -2,4 +2,4 @@ iPhone 4s application that performs canny edge detection on live video.
 
 The application implements OpenGL fragment shaders for each of the steps in the canny edge detection procedure.
 
-It ases the GPUImage library as framework.
+It uses the GPUImage library as framework.
